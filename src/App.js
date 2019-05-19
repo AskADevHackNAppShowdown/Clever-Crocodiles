@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   deleteTodo = key => {
-    const filteredItems = this.state.toDo.splice(key)
+    const filteredItems = this.state.toDo.splice(1, key)
     this.setState({
       toDo: filteredItems,
     })  
@@ -27,12 +27,16 @@ class App extends Component {
     return (
       <div className="App">
           <Header/>
-            <input onChange = { e => {
+            <div style={{padding: '10px'}}>
+            <input style={{fontSize: '20px'}}
+            onChange = { e => {
               this.setState({text: e.target.value}) 
               }}/> 
-            <button onClick = { () => {
+            <button style={{fontSize: '20px'}}
+            onClick = { () => {
               this.setState({toDo: [...this.state.toDo, this.state.text]}) 
-              }}>Add Todo</button> 
+              }}>Add To-do</button> 
+              </div>
             <div className="content">
                 {cards}
             </div>

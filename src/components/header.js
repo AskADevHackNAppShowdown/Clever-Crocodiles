@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
-            Create a todo list!
+        <div style={{backgroundColor: 'white', padding: '10px', fontSize: '30px'}}>
+            Create a to-do list!
         </div>
     )
 }
