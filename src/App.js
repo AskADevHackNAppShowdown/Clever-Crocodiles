@@ -8,16 +8,24 @@ import './App.css';
 
 class App extends Component {
   state = {
-
+    todos: ['example','example','example','example','example', 'example'],
+    text: '',
   }
 
   render() {
+    const cards = this.state.todos.map((t,i)=>{
+      return <TodoCard todo={t} key={i} />
+    });
+
+    
     return (
       <div className="App">
           <Header/>
+            <SpecialTextBox/>
+            <SpecialText/>
+            <input></input>
             <div className="content">
-                <SpecialTextBox/>
-                <SpecialText/>
+                {cards}
             </div>
           <Footer/>
       </div>

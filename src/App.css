@@ -1,8 +1,12 @@
 .App {
   text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1558143275-ad1747eb489c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2796&q=80");
+  background-size: 100%;
 }
 
 .content {
-  height: 90vh;
-  color: red;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
