@@ -29,7 +29,7 @@ function TodoCard(props) {
           {props.todo}
         </Typography>
       </CardContent>
-      <Button size="small" color="secondary">X</Button>
+      <Button onClick={props.deleteTodo} size="small" color="secondary">X</Button>
     </Card>
   );
 }
