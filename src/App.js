@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Layout from './layout';
+import Header from './components/header';
+import Footer from './components/footer';
 import './App.css';
 
 class App extends Component {
@@ -10,9 +11,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout>
-          
-        </Layout>
+          <Header/>
+            <div className="content">
+              Here is the main page content.
+            </div>
+          <Footer/>
       </div>
     )
   }
