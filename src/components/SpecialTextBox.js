@@ -5,6 +5,7 @@ export default function SpecialTextBox(props) {
       <div>
         Enter Special Text:
         <input onChange={(e)=>{
+            
             if(props.set){
               props.set(e.target.value);
             }

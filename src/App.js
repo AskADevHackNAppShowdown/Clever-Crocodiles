@@ -11,9 +11,7 @@ class App extends Component {
   }
 
   deleteTodo = key => {
-    const filteredItems = this.state.toDo.filter(item => {
-      return item.key !== key
-    })
+    const filteredItems = this.state.toDo.splice(key)
     this.setState({
       toDo: filteredItems,
     })  

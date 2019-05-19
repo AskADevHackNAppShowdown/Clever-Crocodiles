@@ -5,20 +5,11 @@
 //   }
 // }
 
-const txt = {
 
-  arr:[]
-}
 
-export function setSpecialText(state = txt, action){
-  switch (action.type){
-     case 'SET_SPECIAL_TEXT' :
-       return { 
-          ...state,
-          arr:[...state.arr, action.newItem]
-     }
-
-     default:return state
+export function setSpecialText(txt, arr, action){
+  return (dispatch) => {
+    
   }
 }
 
