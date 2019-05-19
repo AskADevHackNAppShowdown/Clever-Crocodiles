@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
+import TodoCard from './components/TodoCard';
 import './App.css';
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
       <div className="App">
           <Header/>
             <div className="content">
-              Here is the main page content.
+              
             </div>
           <Footer/>
       </div>
