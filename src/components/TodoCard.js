@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
   card: {
     minWidth: 275,
+    maxWidth: 200
   },
   bullet: {
     display: 'inline-block',
@@ -57,7 +58,7 @@ function TodoCard(props) {
   );
 }
 
-SimpleCard.propTypes = {
+TodoCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
